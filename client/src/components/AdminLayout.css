@@ -1,6 +1,51 @@
 .admin-layout {
     display: flex;
     min-height: 100vh;
+    position: relative;
+}
+
+/* Hamburger Menu Button */
+.hamburger-menu {
+    display: none;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1001;
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.hamburger-menu:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.6);
+}
+
+/* Sidebar Overlay */
+.sidebar-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .admin-sidebar {
@@ -12,6 +57,8 @@
     position: fixed;
     height: 100vh;
     overflow-y: auto;
+    z-index: 1000;
+    transition: transform 0.3s ease;
 }
 
 .admin-header {
@@ -37,6 +84,27 @@
     font-weight: 700;
 }
 
+.close-sidebar {
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 6px;
+}
+
+.close-sidebar:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-50%) rotate(90deg);
+}
+
 .admin-sidebar nav {
     display: flex;
     flex-direction: column;
@@ -53,8 +121,13 @@
     font-weight: 500;
     display: flex;
     align-items: center;
+    gap: 12px;
     position: relative;
     overflow: hidden;
+}
+
+.admin-sidebar a svg {
+    flex-shrink: 0;
 }
 
 .admin-sidebar a::before {
@@ -99,31 +172,50 @@
 }
 
 @media (max-width: 768px) {
-    .admin-layout {
-        flex-direction: column;
+    .hamburger-menu {
+        display: block;
+    }
+
+    .sidebar-overlay {
+        display: block;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .sidebar-overlay.active {
+        opacity: 1;
+        pointer-events: all;
     }
 
     .admin-sidebar {
-        width: 100%;
-        position: relative;
-        height: auto;
-        min-height: 0;
+        transform: translateX(-100%);
+        width: 280px;
     }
 
-    .admin-header {
-        position: sticky;
+    .admin-sidebar.open {
+        transform: translateX(0);
+    }
+
+    .admin-sidebar.open ~ .sidebar-overlay {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .close-sidebar {
+        display: block;
     }
 
     .admin-content {
         margin-left: 0;
-        padding: 20px;
+        padding: 80px 20px 20px;
+    }
+
+    .admin-header {
+        padding: 20px 60px 20px 20px;
     }
 
     .admin-sidebar nav {
-        flex-direction: row;
-        overflow-x: auto;
-        white-space: nowrap;
-        gap: 8px;
+        padding: 20px 15px;
     }
 
     .admin-sidebar a {
@@ -143,7 +235,7 @@
     }
 
     .admin-content {
-        padding: 15px;
+        padding: 70px 15px 15px;
     }
 
     .admin-sidebar nav {
