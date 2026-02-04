@@ -1,8 +1,9 @@
 .menu-container {
-    padding: 60px 20px;
-    max-width: 1200px;
+    padding: 80px 20px;
+    max-width: 1400px;
     margin: 0 auto;
     min-height: 100vh;
+    background: linear-gradient(to bottom, #ffffff 0%, #fafafa 100%);
 }
 
 .menu-container h1 {
@@ -10,10 +11,8 @@
     margin-bottom: 50px;
     font-size: 48px;
     font-weight: 700;
-    background: linear-gradient(135deg, #e67e22 0%, #f39c12 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #ff8c00;
+    text-transform: capitalize;
 }
 
 .category-filter {
@@ -25,49 +24,50 @@
 }
 
 .category-filter button {
-    padding: 12px 28px;
-    background: white;
-    border: 2px solid #e0e0e0;
+    padding: 12px 32px;
+    background: #f5f5f5;
+    border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: 500;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    font-size: 15px;
+    color: #666;
 }
 
 .category-filter button:hover {
-    border-color: #e67e22;
-    color: #e67e22;
+    background: #e8e8e8;
     transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .category-filter button.active {
-    background: linear-gradient(135deg, #e67e22 0%, #f39c12 100%);
+    background: #ff8c00;
     color: white;
-    border-color: transparent;
-    box-shadow: 0 4px 15px rgba(230, 126, 34, 0.4);
+    box-shadow: 0 4px 15px rgba(255, 140, 0, 0.4);
 }
 
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 35px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .menu-card {
     background: white;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
     cursor: pointer;
-    border: 2px solid transparent;
+    border: 1px solid #f0f0f0;
 }
 
 .menu-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(230, 126, 34, 0.2);
-    border-color: #e67e22;
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
 .menu-card img {
@@ -83,26 +83,24 @@
 
 .menu-card h3 {
     padding: 20px 20px 10px;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
-    color: #2c3e50;
+    color: #333;
 }
 
 .menu-card p {
     padding: 0 20px;
-    color: #7f8c8d;
-    font-size: 14px;
+    color: #999;
+    font-size: 13px;
     line-height: 1.6;
+    margin-bottom: 15px;
 }
 
 .menu-card .price {
-    padding: 20px;
-    font-size: 24px;
+    padding: 0 20px 20px;
+    font-size: 22px;
     font-weight: 700;
-    background: linear-gradient(135deg, #e67e22 0%, #f39c12 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #ff8c00;
 }
 
 
@@ -120,46 +118,22 @@
 
 .order-btn {
     width: calc(100% - 40px);
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 18px 15px;
-    margin-top: auto;
-    margin-bottom: 20px;
-    background: linear-gradient(135deg, #e67e22 0%, #f39c12 100%);
+    margin: 0 20px 20px;
+    padding: 14px 15px;
+    background: #ff8c00;
     color: white;
     border: none;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    position: relative;
-    overflow: hidden;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50px;
 }
 
-.order-btn::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.3);
-    transform: translate(-50%, -50%);
-    transition: width 0.6s, height 0.6s;
-}
-
-.order-btn:hover::before {
-    width: 400px;
-    height: 400px;
-}
-
 .order-btn:hover {
-    background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+    background: #ff7700;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 140, 0, 0.4);
 }
 
 /* Responsive Styles for Menu */

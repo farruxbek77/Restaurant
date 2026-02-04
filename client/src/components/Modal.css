@@ -11,6 +11,7 @@
     z-index: 2000;
     padding: 20px;
     animation: fadeIn 0.3s ease;
+    -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
 }
 
