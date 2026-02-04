@@ -93,6 +93,7 @@
         gap: 0;
         transition: left 0.3s ease;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        z-index: 999;
     }
 
     .nav-links.active {
@@ -109,7 +110,11 @@
     .nav-links a {
         display: block;
         padding: 10px 20px;
-        font-size: 15px;
+        font-size: 16px;
+    }
+
+    .nav-links a::after {
+        display: none;
     }
 
     .mobile-menu-toggle {

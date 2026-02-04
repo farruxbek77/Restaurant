@@ -140,6 +140,7 @@
 @media (max-width: 1024px) {
     .menu-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
     }
 }
 
@@ -155,6 +156,7 @@
 
     .category-filter {
         gap: 10px;
+        margin-bottom: 30px;
     }
 
     .category-filter button {
@@ -177,13 +179,23 @@
 
     .order-btn {
         font-size: 14px;
-        padding: 15px;
+        padding: 12px;
     }
 }
 
 @media (max-width: 480px) {
+    .menu-container {
+        padding: 30px 10px;
+    }
+
     .menu-container h1 {
         font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    .category-filter {
+        gap: 8px;
+        margin-bottom: 25px;
     }
 
     .category-filter button {
@@ -202,7 +214,14 @@
     }
 
     .menu-card .price {
-        padding: 15px;
+        padding: 0 15px 15px;
         font-size: 18px;
+    }
+
+    .order-btn {
+        width: calc(100% - 30px);
+        margin: 0 15px 15px;
+        padding: 12px;
+        font-size: 13px;
     }
 }
