@@ -11,7 +11,7 @@
     margin-bottom: 50px;
     font-size: 48px;
     font-weight: 700;
-    color: #ff8c00;
+    color: #3498db;
     text-transform: capitalize;
 }
 
@@ -42,9 +42,9 @@
 }
 
 .category-filter button.active {
-    background: #ff8c00;
+    background: #3498db;
     color: white;
-    box-shadow: 0 4px 15px rgba(255, 140, 0, 0.4);
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
 }
 
 .menu-grid {
@@ -100,7 +100,7 @@
     padding: 0 20px 20px;
     font-size: 22px;
     font-weight: 700;
-    color: #ff8c00;
+    color: #3498db;
 }
 
 
@@ -120,7 +120,7 @@
     width: calc(100% - 40px);
     margin: 0 20px 20px;
     padding: 14px 15px;
-    background: #ff8c00;
+    background: #3498db;
     color: white;
     border: none;
     font-size: 15px;
@@ -131,9 +131,9 @@
 }
 
 .order-btn:hover {
-    background: #ff7700;
+    background: #2980b9;
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255, 140, 0, 0.4);
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
 }
 
 /* Responsive Styles for Menu */
