@@ -9,8 +9,9 @@
         "server:simple": "node server/simple-server.js",
         "seed": "node server/seed.js",
         "client": "cd client && npm run dev",
-        "build": "cd client && npm run build",
-        "start": "node server/index.js"
+        "build": "cd client && npm install && npm run build",
+        "start": "node server/index.js",
+        "deploy": "npm install && cd client && npm install && npm run build && cd .."
     },
     "keywords": [
         "restaurant",

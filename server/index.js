@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv');
+const path = require('path');
 
 dotenv.config();
 
@@ -10,7 +11,11 @@ const app = express();
 // Middleware
 app.use(cors({
     origin: process.env.NODE_ENV === 'production'
-        ? ['https://restaurant-frontend.onrender.com', 'https://your-custom-domain.com']
+        ? [
+            'https://restaurant-frontend.onrender.com',
+            'https://restaurant-frontend-xxxx.onrender.com', // O'z URL ingizni qo'ying
+            process.env.FRONTEND_URL
+        ].filter(Boolean)
         : ['http://localhost:5173', 'http://localhost:3000'],
     credentials: true
 }));
@@ -27,6 +32,15 @@ app.use('/api/auth', require('./routes/auth'));
 app.use('/api/menu', require('./routes/menu'));
 app.use('/api/orders', require('./routes/orders'));
 app.use('/api/reservations', require('./routes/reservations'));
+
+// Serve static files from React app in production
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.join(__dirname, '../client/dist')));
+
+    app.get('*', (req, res) => {
+        res.sendFile(path.join(__dirname, '../client/dist/index.html'));
+    });
+}
 
 // Error handling middleware
 app.use((err, req, res, next) => {
