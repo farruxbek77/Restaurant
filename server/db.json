@@ -1,0 +1,231 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "$2a$10$1q6mdE.1Ljr2Z.oH3IuzTOlRkuJj.I3BazxYT1BD80DJMdS89epDO",
+      "role": "admin"
+    }
+  ],
+  "menuItems": [
+    {
+      "id": "2",
+      "name": "Lagman",
+      "nameUz": "Lag'mon",
+      "description": "Noodle soup with vegetables",
+      "descriptionUz": "Sabzavotli lag'mon",
+      "price": 20000,
+      "category": "Birinchi taomlar",
+      "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400",
+      "available": true
+    },
+    {
+      "id": "3",
+      "name": "Shashlik",
+      "nameUz": "Shashlik",
+      "description": "Grilled meat skewers",
+      "descriptionUz": "Qovurilgan go'sht",
+      "price": 100000,
+      "category": "Ikkinchi taomlar",
+      "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400",
+      "available": true
+    },
+    {
+      "id": "4",
+      "name": "Somsa",
+      "nameUz": "Somsa",
+      "description": "Baked pastry with meat",
+      "descriptionUz": "Go'shtli somsa",
+      "price": 5000,
+      "category": "Shirinliklar",
+      "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400",
+      "available": true
+    },
+    {
+      "id": "5",
+      "name": "Manti",
+      "nameUz": "Manti",
+      "description": "Steamed dumplings with meat",
+      "descriptionUz": "Bug'da pishirilgan go'shtli manti",
+      "price": 18000,
+      "category": "Ikkinchi taomlar",
+      "image": "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?w=400",
+      "available": true
+    },
+    {
+      "id": "6",
+      "name": "Norin",
+      "nameUz": "Norin",
+      "description": "Cold noodle dish with horse meat",
+      "descriptionUz": "Sovuq lag'mon, qazi bilan",
+      "price": 22000,
+      "category": "Ikkinchi taomlar",
+      "image": "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?w=400",
+      "available": true
+    },
+    {
+      "id": "7",
+      "name": "Mastava",
+      "nameUz": "Mastava",
+      "description": "Rice soup with vegetables",
+      "descriptionUz": "Guruch va sabzavotli sho'rva",
+      "price": 12000,
+      "category": "Birinchi taomlar",
+      "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400",
+      "available": true
+    },
+    {
+      "id": "8",
+      "name": "Shurpa",
+      "nameUz": "Sho'rva",
+      "description": "Traditional meat soup",
+      "descriptionUz": "An'anaviy go'shtli sho'rva",
+      "price": 15000,
+      "category": "Birinchi taomlar",
+      "image": "https://images.unsplash.com/photo-1588566565463-180a5b2090d2?w=400",
+      "available": true
+    },
+    {
+      "id": "9",
+      "name": "Achichuk Salad",
+      "nameUz": "Achichuk salat",
+      "description": "Fresh tomato and onion salad",
+      "descriptionUz": "Pomidor va piyoz salati",
+      "price": 8000,
+      "category": "Salatlar",
+      "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400",
+      "available": true
+    },
+    {
+      "id": "10",
+      "name": "Olivye",
+      "nameUz": "Olivye",
+      "description": "Russian potato salad",
+      "descriptionUz": "Rus kartoshka salati",
+      "price": 10000,
+      "category": "Salatlar",
+      "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400",
+      "available": true
+    },
+    {
+      "id": "11",
+      "name": "Green Tea",
+      "nameUz": "Ko'k choy",
+      "description": "Traditional green tea",
+      "descriptionUz": "An'anaviy ko'k choy",
+      "price": 3000,
+      "category": "Ichimliklar",
+      "image": "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=400",
+      "available": true
+    },
+    {
+      "id": "12",
+      "name": "Black Tea",
+      "nameUz": "Qora choy",
+      "description": "Traditional black tea",
+      "descriptionUz": "An'anaviy qora choy",
+      "price": 3000,
+      "category": "Ichimliklar",
+      "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=400",
+      "available": true
+    },
+    {
+      "id": "13",
+      "name": "Kompot",
+      "nameUz": "Kompot",
+      "description": "Fruit drink",
+      "descriptionUz": "Mevali ichimlik",
+      "price": 5000,
+      "category": "Ichimliklar",
+      "image": "https://images.unsplash.com/photo-1546173159-315724a31696?w=400",
+      "available": true
+    },
+    {
+      "id": "14",
+      "name": "Chak-chak",
+      "nameUz": "Chak-chak",
+      "description": "Honey dessert",
+      "descriptionUz": "Asalli shirinlik",
+      "price": 7000,
+      "category": "Shirinliklar",
+      "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400",
+      "available": true
+    },
+    {
+      "id": "15",
+      "name": "Halva",
+      "nameUz": "Halva",
+      "description": "Sweet tahini dessert",
+      "descriptionUz": "Shirin halva",
+      "price": 6000,
+      "category": "Shirinliklar",
+      "image": "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=400",
+      "available": true
+    },
+    {
+      "id": "16",
+      "name": "Dimlama",
+      "nameUz": "Dimlama",
+      "description": "Stewed meat with vegetables",
+      "descriptionUz": "Go'sht va sabzavotli qovurma",
+      "price": 23000,
+      "category": "Ikkinchi taomlar",
+      "image": "https://images.unsplash.com/photo-1574484284002-952d92456975?w=400",
+      "available": true
+    },
+    {
+      "id": "17",
+      "name": "Kebab",
+      "nameUz": "Kabob",
+      "description": "Grilled meat kebab",
+      "descriptionUz": "Qovurilgan go'shtli kabob",
+      "price": 20000,
+      "category": "Ikkinchi taomlar",
+      "image": "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=400",
+      "available": true
+    },
+    {
+      "id": "18",
+      "name": "Non",
+      "nameUz": "Non",
+      "description": "Traditional Uzbek bread",
+      "descriptionUz": "An'anaviy o'zbek noni",
+      "price": 2000,
+      "category": "Shirinliklar",
+      "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400",
+      "available": true
+    }
+  ],
+  "reservations": [
+    {
+      "id": "1770124171635",
+      "name": "Shohruhbek",
+      "phone": "+998 99 999 99 99",
+      "date": "2026-02-05",
+      "time": "18:00",
+      "guests": 2,
+      "message": "",
+      "status": "confirmed",
+      "createdAt": "2026-02-03T13:09:31.635Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1770125199672",
+      "customerName": "Farruxbek",
+      "phone": "+998 91 242 13 08",
+      "address": "G'ijduvon",
+      "items": [
+        {
+          "menuItem": "3",
+          "menuItemName": "Shashlik",
+          "quantity": 1,
+          "price": 100000
+        }
+      ],
+      "totalAmount": 100000,
+      "status": "delivered",
+      "createdAt": "2026-02-03T13:26:39.672Z"
+    }
+  ]
+}
